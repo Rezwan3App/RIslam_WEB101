@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: crimson;
+  color: white;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-content {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 100px; /* Prevent footer from covering content */
+}
+
+.intro, .gallery, .video-section, .newsletter, .links-section {
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: crimson;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #700000;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.images img {
+  max-width: 250px;
+  height: auto;
+  object-fit: contain;
+  border: 2px solid crimson;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.images a:hover img {
+  transform: scale(1.05);
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.theme-image img {
+  width: 80%;
+  max-width: 600px;
+  margin: 2rem auto;
+  display: block;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .newsletter {
+    flex-direction: row;
+  }
+}
+
+.links-section {
+  margin: 2rem 0;
+}
+
+.link-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.link-buttons a {
+  background-color: crimson;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.link-buttons a:hover {
+  background-color: #700000;
+}
+
+.footer {
+  background-color: #900;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+}
+
+.footer a {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+
